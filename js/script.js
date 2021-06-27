@@ -3,7 +3,7 @@ new Vue (
      {
         el: "#app",
         data:{
-            photos: [
+            myPhotos: [
                 "img/photo 1.jpg",
                 "img/photo 2.jpg",
                 "img/photo 3.jpg",
@@ -11,9 +11,14 @@ new Vue (
             ],
             pictureIndex: 0,
         },
+        created() {
+           setInterval(() => {
+               this.next();
+           }, 3000); //indica che app è pronto 
+        },
         methods: {
             next: function () {
-                if(this.pictureIndex === (this.photos.length - 1)){
+                if(this.pictureIndex === (this.myPhotos.length - 1)){
                     this.pictureIndex = 0;
                 } else {
                     this.pictureIndex++; 
@@ -22,12 +27,24 @@ new Vue (
             },
             prev: function () {
                 if(this.pictureIndex === 0){
-                    this.pictureIndex = this.photos.length - 1;
+                    this.pictureIndex = this.myPhotos.length - 1;
                 } else {
                     this.pictureIndex--; 
                 }
+                
             
+            },
+            setNewIndex: function(index){
+                this.pictureIndex = index;
+            },
+
+            exactlyDot: function(index){
+                if(index === this.pictureIndex){
+                    return 'current';
+                } else {
+                    return '';
+                }
             }
         }
      }
-)
+);

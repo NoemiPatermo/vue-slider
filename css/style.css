@@ -1,6 +1,26 @@
+.slider{
+   position: relative; 
+}
+
+.slider-picture img{
+    width: 100%;
+}
 .arrow{
-    font-size: 20px;
+    font-size: 15px;
+    
+    cursor: pointer;
 }
 h3{
-    text-align: middle;
+    text-align: center;
+    font-style: oblique;
+}
+.slider-dots{
+    width: 100%;
+    text-align: center;
+    position: relative;/* sistema*/
+    margin-top: -100px;
+    color: #fff;
+}
+.slider-dots .current{
+    color: blue;
 }
