@@ -5,26 +5,43 @@
 .slider-picture img{
     width: 100%;
 }
+.arrow-box{
+    display: flex;
+    justify-content: center;
+}
 .arrow{
     font-size: 30px;
-    text-align: center;
+    align-items: center;
     cursor: pointer;
 }
-h3{
-    text-align: center;
-    font-style: oblique;
+.oscar-box{
+    display: flex;
+}
+.oscar-box h5{
+    font-weight: 500;
+    color: peru;
+}
+.oscar-content{
+    align-items: center;
+    padding-left: 5px;
+    font-weight: bolder;
 }
 .text{
     margin-top: 80px;
     text-align: center;
+    font-style: oblique;
 }
 .slider-dots{
-    width: 100%;
+    position: relative;
+    width: 180px;
     text-align: center;
-    position: relative;/* sistema*/
+    left: 50%;
     margin-top: -100px;
     color: #fff;
+    background-color: rgba(2, 0 , 0, 0.5);
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
 }
 .slider-dots .current{
-    color: blue;
+    color: peru;
 }

@@ -4,10 +4,10 @@ new Vue (
         el: "#app",
         data:{
             myPhotos: [
-                {foto:"img/photo1.jpg", oscar: "Miglior film e miglior regista"},
-                {foto:"img/photo2.jpg", oscar: "Migliore attore protagonista"},
-                {foto:"img/photo3.jpg", oscar: "Migliore attrice protagonista"},
-                {foto:"img/photo4.jpg", oscar: "Migliore sceneggiatura non originale"},
+                {foto:"img/photo1.jpg", oscar: "Miglior film e miglior regista, Milos Forman."},
+                {foto:"img/photo2.jpg", oscar: "Migliore attore protagonista, Jack Nicholson."},
+                {foto:"img/photo3.jpg", oscar: "Migliore attrice protagonista, Louise Fletcher."},
+                {foto:"img/photo4.jpg", oscar: "Migliore sceneggiatura non originale."},
             ],
             pictureIndex: 0,
         },
