@@ -20,7 +20,7 @@
 
                 <div class="slider-picture col-8">
                     <h3>Chi può giudicare</h3>
-                    <img :src="myPhotos[pictureIndex]" alt="picture">
+                    <img :src="myPhotos[pictureIndex].foto" alt="picture">
                     <div class="slider-dots">
                         <i 
                             v-for="(img, index) in myPhotos"
@@ -37,7 +37,12 @@
                 </div>
                 <h3 class="text">cosa voglia dire esser folli...</h3>
             </div>
-            
+            <div class="oscar-box">
+                <h4>Vincitore di 5 premi oscar:</h4>
+                <div>
+                    {{myPhotos[pictureIndex].oscar}}
+                </div>
+            </div>
         </div>
         
     </div>

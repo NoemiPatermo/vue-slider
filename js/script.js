@@ -4,10 +4,10 @@ new Vue (
         el: "#app",
         data:{
             myPhotos: [
-                "img/photo 1.jpg",
-                "img/photo 2.jpg",
-                "img/photo 3.jpg",
-                "img/photo 4.jpg",
+                {foto:"img/photo1.jpg", oscar: "Miglior film e miglior regista"},
+                {foto:"img/photo2.jpg", oscar: "Migliore attore protagonista"},
+                {foto:"img/photo3.jpg", oscar: "Migliore attrice protagonista"},
+                {foto:"img/photo4.jpg", oscar: "Migliore sceneggiatura non originale"},
             ],
             pictureIndex: 0,
         },
