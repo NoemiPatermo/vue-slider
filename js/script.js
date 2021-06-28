@@ -14,8 +14,8 @@ new Vue (
         created() {
            setInterval(() => {
                this.next();
-           }, 3000); //indica che app è pronto 
-        },
+           }, 3000);            //indica che app è pronto, qui vedrai il set interval, che altrimenti non vedi 
+        },                          //se messo fuori. Non è un methods.
         methods: {
             next: function () {
                 if(this.pictureIndex === (this.myPhotos.length - 1)){
